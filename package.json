@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~5.0.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "0e7d154a-57f9-4481-bb08-dd2721a5912c",
+    "appType": "clockface",
+    "appDisplayName": "RNWatch",
+    "iconFile": "screenshots/RNWatch.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity",
+      "access_user_profile"
+    ],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "RN Watch"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}

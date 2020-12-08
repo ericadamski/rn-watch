@@ -1,0 +1,92 @@
+<svg>
+  <rect id="background"/>
+  <section id="seconds" x="70%-30" y="50%-30" width="60" height="60">
+    <arc
+      id="seconds__arc"
+      x="$"
+      y="$"
+      width="100%"
+      height="100%"
+      arc-width="2"
+      start-angle="0"
+      sweep-angle="360"
+      fill="#d1d1e9"
+    />
+    <text id="seconds__out" y="50%+8" x="50%" text-anchor="middle" font-size="25" fill="#d1d1e9">
+      60
+    </text>
+  </section>
+  <section id="steps" x="50%-30" y="70%-30" width="60" height="60">
+    <arc
+      id="steps__arc"
+      x="$"
+      y="$"
+      width="100%"
+      height="100%"
+      fill="#d1d1e9"
+      arc-width="2"
+      start-angle="0"
+      sweep-angle="360"
+    />
+    <text
+      id="steps__words"
+      y="25"
+      x="50%"
+      text-anchor="middle"
+      font-size="15"
+      font-weight="bold"
+      fill="#d1d1e9"
+      opacity="0.4"
+    >
+      Steps
+    </text>
+    <text id="steps__out" y="90%-10" x="50%" text-anchor="middle" font-size="20" fill="#d1d1e9">
+      10
+    </text>
+  </section>
+  <section id="date" x="50" y="30" width="40" height="40">
+    <text id="date__month" text-anchor="middle" font-weight="bold" font-size="20" fill="#d1d1e9">
+      APR
+    </text>
+    <text id="date__day" y="$-4" text-anchor="middle" font-size="20" fill="#d1d1e9">
+      10
+    </text>
+  </section>
+  <section id="digital" x="100%-60" y="60" width="40" height="40">
+    <text
+      id="digital__out"
+      y="$-4"
+      text-anchor="middle"
+      font-size="20"
+      font-weight="bold"
+      fill="#d1d1e9"
+    >
+      14:15
+    </text>
+  </section>
+  <g id="clock">
+    <g transform="translate(50%,50%)">
+      <arc
+        id="clock__border"
+        x="$-120"
+        y="$-120"
+        width="240"
+        height="240"
+        fill="#994ff3"
+        arc-width="2"
+        start-angle="0"
+        sweep-angle="360"
+      />
+    </g>
+    <g id="clock__mins" pointer-events="visible" transform="translate(50%,50%)" opacity="0.8">
+      <rect id="clock__min-pointer" x="$-1" y="-110" width="2" height="110" fill="#994ff3" />
+    </g>
+    <g id="clock__hrs" pointer-events="visible" transform="translate(50%,50%)" opacity="0.6">
+      <rect id="clock__hr-pointer" x="$-2" y="-75" width="4" height="75" fill="#994ff3" />
+    </g>
+    <g id="clock__secs" pointer-events="visible" transform="translate(50%,50%)" opacity="1">
+      <rect id="clock__secs-pointer" x="$-2" y="-70" width="4" height="80" fill="#d1d1e9" />
+    </g>
+    <circle id="clock__center" cx="50%" cy="50%" r="5" fill="#994ff3" />
+  </g>
+</svg>
